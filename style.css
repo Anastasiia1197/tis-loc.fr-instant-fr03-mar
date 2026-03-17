@@ -40,22 +40,22 @@
 	interpolate-size: allow-keywords;
 
 	--background: linear-gradient(45deg, #0c0a09 0%, #1c1917 45%, #0c0a09 100%);
-	--header: linear-gradient(90deg, #1c1917e0, #2dd4bf, #0c0a09);
-	--btn-accent: linear-gradient(135deg, #fb923c, #ea580c);
-	--btn-inherit: #fff7ed;
-	--accent: linear-gradient(135deg, #f97316, #c2410c);
-	--sub-title: linear-gradient(-135deg, #2dd4bf30, #042f2e);
-	--gift: #f0fdfae1;
-	--gift-bg: rgba(251, 146, 60, 0.1);
-	--gift-btn: linear-gradient(135deg, #9a3412, #431407);
-	--border-radius: 10px;
+	--header: linear-gradient(90deg, #1c1917e0, #fbbf24, #0c0a09);
+	--btn-accent: linear-gradient(135deg, #f59e0b, #b45309);
+	--btn-inherit: #fffbeb;
+	--accent: linear-gradient(135deg, #facc15, #a16207);
+	--sub-title: linear-gradient(-135deg, #f59e0b30, #422006);
+	--gift: #fff7ed;
+	--gift-bg: rgba(251, 191, 36, 0.1);
+	--gift-btn: linear-gradient(135deg, #78350f, #431407);
+	--border-radius: 10%;
 	--container: #0c0a09;
 	--table: linear-gradient(180deg, #1c1917, #0c0a09);
-	--minus: #38bdf8;
-	--shadow: #fb923c50;
-	--second-shadow: #ea580c;
-	--text-shadow: #2dd4bf;
-	--list-bg: linear-gradient(90deg, rgba(45, 212, 191, 0.1), rgba(251, 146, 60, 0.1));
+	--minus: #f87171;
+	--shadow: #fbbf2450;
+	--second-shadow: #d97706;
+	--text-shadow: #f59e0b;
+	--list-bg: linear-gradient(90deg, rgba(251, 191, 36, 0.15), rgba(120, 53, 15, 0.1));
 }
 
 * {
@@ -149,6 +149,7 @@ h6 {
 h1 {
 	font-weight: 700;
 	font-size: 2.4rem;
+	margin-left: 15px;
 }
 
 h2 {
@@ -192,6 +193,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	background: var(--header);
+	border-radius: var(--border-radius);
 	box-shadow: 0 3px 3px var(--shadow);
 	max-width: 100vw;
 	margin: 0 auto;
@@ -217,6 +219,7 @@ header img {
 	padding: 10px 20px;
 	font-size: 1rem;
 	border: 1px solid var(--btn-inherit);
+	border-radius: var(--border-radius);
 	margin-right: 5px;
 	font-weight: 700;
 	transition: all 0.3s ease-in-out;
@@ -226,6 +229,7 @@ header img {
 	padding: 12px 20px;
 	font-size: 1rem;
 	background: var(--btn-accent);
+	border-radius: var(--border-radius);
 	box-shadow: 3px 3px 3px var(--gift);
 	text-align: center;
 	font-weight: 700;
@@ -358,6 +362,8 @@ header img {
 	padding-bottom: 10px;
 	margin: 30px auto;
 	background: var(--container);
+	border-top-left-radius: 3%;
+	border-top-right-radius: 3%;
 	box-shadow: 0 0 13px var(--second-shadow);
 }
 
@@ -397,6 +403,7 @@ header img {
 	padding-left: 30px;
 	margin-bottom: 10px;
 	background: var(--btn-accent);
+	border-radius: var(--border-radius);
 	overflow: hidden;
 }
 
